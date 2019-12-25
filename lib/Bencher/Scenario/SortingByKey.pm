@@ -98,7 +98,8 @@ _
             description => <<'_',
 
 This module also caches the compute keys. It's faster because it's implemented
-in XS.
+in XS. The compute key must be string (to be compared lexicographically) or
+numeric.
 
 _
             code_template => 'state $array=<array>; Sort::Key::nkeysort(sub { -$_ }, @$array)',
@@ -118,8 +119,17 @@ _
 1;
 # ABSTRACT:
 
-=head1 prepend:SEE ALSO
+=head1 SEE ALSO
 
-L<Sort::Maker> describes the various sort techniques (ST, GRT)
+Guttman, U., & Rosler, L. (2003). A fresh look at efficient perl sorting.
+L<http://www.sysarch.com/Perl/sort_paper.html>. This is the original paper that
+mentions GRT.
 
-L<Sort::Key>
+L<https://www.perlmonks.org/?node_id=145659>
+
+L<https://www.perlmonks.org/?node_id=287149>
+
+L<Sort::Maker>, also by Uri Guttman, describes the various sort techniques (ST,
+GRT, etc).
+
+L<Sort::Key> by Salvador Fandiño García.
