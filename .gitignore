@@ -2,3 +2,4 @@ Bencher-Scenario-SortingByKey-*
 .build
 *~
 nytprof*
+.DS_Store
