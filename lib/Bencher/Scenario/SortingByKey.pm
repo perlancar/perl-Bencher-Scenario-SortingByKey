@@ -1,13 +1,13 @@
 package Bencher::Scenario::SortingByKey;
 
+use 5.010001;
+use strict;
+use warnings;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
-
-use 5.010001;
-use strict;
-use warnings;
 
 our $scenario = {
     summary => 'Benchmark various techniques to sort array by some computed key',
